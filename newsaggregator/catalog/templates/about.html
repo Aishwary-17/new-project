@@ -1,0 +1,40 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h2>Abstract</h2>
+    <p>News Collaborator is a news algorithm that gathers and clusters stories of the same
+topic from several leading news websites and also traces the genuine source of a
+news item and what is the course of the story. Essentially, it visualizes the
+development of each news, refining his search by country, by specific news site, by
+topics, by category, by date etc . The working prototype analyzes news and provide
+selected news on the basic of users recommendation. The purpose of this news
+aggregator is to present how the algorithm works, visualize case studies and propose
+future .<p>
+  <h3>Idea & Objective</h3>
+  <p><em>Web scrapping</em>- When performing data analysis tasks, it’s common to want to
+use data found on the internet. We are usually be able to access this data in
+CSV format, or via an application programming interface(API). However,
+there are times when the data we want can only be accessed as part of a web
+page. In cases like this, we want to use a technique called web scraping to get
+the data from the news content site into a format you can work with in your
+analysis.
+<br><br>
+<em>Text mining</em> -Generally, the data for text mining is unstructured (plain text),
+For instance, a news with headline, writer, date and category. However, most of
+the times, only content (main text) contains valuable information for
+extraction. We will use text mining to analyze news contents.
+<br><br>
+<em>Clustering</em> – We use clustering algorithms that finds similar contents, identify
+a structure in the news content and put them in a unique group together. Using
+clustering procedure users are able to finds all the articles and with the same
+subject and adds them in the same page-group.
+<br><br>
+<em>User interface</em> – Its provide an interface so that user can access news contain
+on the basis of their choice.</p>
+<h3>Technologies used</h3>
+<p>We use python as back-end language that provide tools and libraries for web
+scrapping, text analysing and clustering like Scrapy , Scipy , Pandas , Scikit etc.
+And for user interface we use front-end language like HTML, CSS, Javascript under
+a Django web framework.</p>    
+{% endblock %}
+

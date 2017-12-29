@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>News List</h1>
+    <h2>{{ category_count }}</h2>
+    {% if category_news %}
+    <ul id="myUL">
+
+      {% for news in category_news %}
+      <li>
+        <a href="{{ news.get_absolute_url }}">{{ news.title }}</a> ({{news.date}})
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no news available.</p>
+    {% endif %}       
+{% endblock %}
+

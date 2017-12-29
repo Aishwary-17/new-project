@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Top Stories</h1>
+<h3>{{ total_list }}</h3>
+{% if new_contents %}
+   <ul>
+      {% for n in new_contents %}
+      <li>
+        <h1>{{ n.title }}</h1>
+        <br><br>
+        <p><strong>date:   </strong> <a href="">{{ n.date }}</a></p> <!-- news date link not yet defined  --> 
+       <p><strong>description:</strong> {{ n.description }}</p>
+       <p><strong>link:</strong><a href="{{ n.link }}"> {{ n.link }}</a></p>
+      </li>
+      
+      {% endfor %}
+    </ul>
+     {% else %}
+      <p>There are no news available.</p>
+    {% endif %}       
+{% endblock %}

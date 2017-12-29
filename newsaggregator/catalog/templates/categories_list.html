@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>All Category</h1>
+    <ul>
+    <li><a href="{% url 'economics' %}">economics</a></li>
+                        <li><a href="{% url 'sports' %}">sports</a></li>
+                        <li><a href="{% url 'politics' %}">politics</a></li>
+                        <li><a href="{% url 'stocks' %}">stocks</a></li>
+                        <li><a href="{% url 'market' %}">market</a></li>
+                        <li><a href="{% url 'science' %}">science</a></li>
+                         <li><a href="{% url 'technology' %}">technology</a></li>
+                         <li><a href="{% url 'health' %}">health</a></li>
+                        <li><a href="{% url 'cryptocurrency' %}">cryptocurrency</a></li>
+                        
+    </ul>
+    <h4>add more categories</h4>      
+{% endblock %}
+
